@@ -1,0 +1,61 @@
+$cWhite: white;
+$cBlack: black;
+
+.try {
+  & .btn {
+    position: relative;
+    display: inline-block;
+    background-color: $cWhite;
+    border: 1px solid $cBlack;
+    font-weight: 600;
+    padding: 10px 40px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: $cBlack;
+    text-decoration: none !important;
+
+    /* ここにボタンのスタイルを追加していこう */
+    &.float {
+      &:hover {
+        color: $cWhite;
+        background-color: $cBlack;
+        box-shadow: 3px 3px 10px $cBlack;
+      }
+    }
+
+    &.filled {
+      color: $cWhite;
+      background-color: $cBlack;
+      box-shadow: 3px 3px 10px 0 $cBlack;
+      &:hover {
+        color: $cBlack;
+        background-color: $cWhite;
+        box-shadow: none;
+      }
+    }
+
+    &.letter-spacing {
+      &:hover {
+        color: $cWhite;
+        background-color: $cBlack;
+        letter-spacing: 3px;
+      }
+    }
+
+    &.shadow {
+      &:hover {
+        transform: translateX(-2px) translateY(-2px);
+        box-shadow: 4px 4px 0px $cBlack;
+      }
+    }
+
+    &.solid {
+      border-radius: 5px;
+      box-shadow: 2px 2px 0px $cBlack;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+@charset "UTF-8";
+.try {
+  /** ここに記述しよう */
+}
+.try .spinner {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(50, 50, 50);
+  margin: 100px auto;
+  transform-style: preserve-3d;
+  -webkit-animation-name: turn;
+          animation-name: turn;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes turn {
+  0% {
+    transform: perspective(300px) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(300px) rotateX(180deg);
+  }
+  100% {
+    transform: perspective(300px) rotateZ(180deg);
+  }
+}
+@keyframes turn {
+  0% {
+    transform: perspective(300px) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(300px) rotateX(180deg);
+  }
+  100% {
+    transform: perspective(300px) rotateZ(180deg);
+  }
+}
+.try .double-spinner {
+  margin: 100px auto;
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+.try .double-spinner div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 50, 50, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.try .double-spinner div:nth-child(2) {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.try .rect-spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+}
+.try .rect-spinner div {
+  display: inline-block;
+  width: 6px;
+  height: 100%;
+  background-color: rgb(50, 50, 50);
+  -webkit-animation-name: piano;
+          animation-name: piano;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.try .rect-spinner div:nth-child(1) {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+.try .rect-spinner div:nth-child(2) {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+.try .rect-spinner div:nth-child(3) {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+}
+.try .rect-spinner div:nth-child(4) {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+.try .rect-spinner div:nth-child(5) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+@-webkit-keyframes piano {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
+@keyframes piano {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}/*# sourceMappingURL=try.min.css.map */

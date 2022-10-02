@@ -1,0 +1,21 @@
+#container {
+  text-align: center;
+}
+#container.btn {
+  color: aqua;
+}
+
+.btn {
+  font-weight: 600;
+  background-color: white;
+  color: rgb(90, 34, 69);
+  border: solid 1px rgb(90, 34, 69);
+  padding: 10px 40px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: rgb(90, 34, 69);
+  color: white;
+}/*# sourceMappingURL=index.min.css.map */

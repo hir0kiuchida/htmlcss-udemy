@@ -1,0 +1,54 @@
+button {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  transition: all 3s;
+  // border: none;
+  
+  &.mobile-menu-icon {
+    span {
+      position: absolute;
+      display: inline-block;
+  
+      height: 2px;
+      width: 60%;
+      background-color: black;
+  
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          top: 10px * $i;
+        }
+      }
+    }
+  
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      span {
+        &:nth-of-type(1) {
+            top: 18px;
+            left: 18px;
+            transform: translateY(6px) rotate(-45deg);
+            width: 30%;
+          }
+        &:nth-of-type(2) {
+          opacity: 0
+          }
+        &:nth-of-type(3) {
+          top: 30px;
+          left: 18px;
+          transform: translateY(-6px) rotate(45deg);
+          width: 30%;
+          }
+        }
+      }
+    }
+
+  // &.menu-open {
+
+  // }
+
+}
